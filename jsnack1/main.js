@@ -56,7 +56,7 @@ let sum = 0;
 zucchine.forEach(zucchina => {
     //salvo una variabile con i singoli valori
     const pesoSingolaZucchina = zucchina.peso
-    console.log(pesoSingolaZucchina);
+    //sommo le singole proprietà per mutare la variabile somma
     sum += pesoSingolaZucchina
 });
 
