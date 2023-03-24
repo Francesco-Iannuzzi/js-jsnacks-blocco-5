@@ -11,4 +11,16 @@ const arrayElement = [ 1, 2, 3, 6, 8]
 //console.log(arrayElement.length);
 
 const numero1 = 2
-const numero2 = 5
+const numero2 = arrayElement.length
+console.log(numero2);
+
+function createNewArray(array, numb1, numb2) {
+    if (numb1 < numb2 && numb2 <= array.lenght) {
+        return array.slice(numb1, numb2)
+    } else {
+        return [];
+    }
+}
+
+createNewArray(arrayElement, numero1, numero2);
+console.log(createNewArray());
