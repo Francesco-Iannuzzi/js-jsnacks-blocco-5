@@ -5,6 +5,7 @@ Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna
 
 */
 
+//creo l'array contenente gli object
 const zucchine = [
     {
         peso: 13,
@@ -23,15 +24,15 @@ const zucchine = [
         lunghezza: 10,
     },
     {
-        peso: 10,
+        peso: 12,
         lunghezza: 9,
     },
     {
-        peso: 10,
+        peso: 14,
         lunghezza: 4,
     },
     {
-        peso: 10,
+        peso: 6,
         lunghezza: 9,
     },
     {
@@ -48,12 +49,16 @@ const zucchine = [
     },
 ]
 
+//creo una variabile nella quale sommerò le varie proprietà
 let sum = 0;
 
+//creo un ciclo forEach per ciclare nell'array
 zucchine.forEach(zucchina => {
-    const pesoZucchina = zucchina.lunghezza
-    console.log(pesoZucchina);
-    sum += pesoZucchina
+    //salvo una variabile con i singoli valori
+    const pesoSingolaZucchina = zucchina.peso
+    console.log(pesoSingolaZucchina);
+    sum += pesoSingolaZucchina
 });
 
+//loggo in console la somma dei pesi
 console.log(sum);
